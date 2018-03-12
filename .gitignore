@@ -17,6 +17,10 @@ out/
 .gradle/
 build/
 
+
+node_modules/
+.temp/
+
 # Local configuration file (sdk path, etc)
 local.properties
 
