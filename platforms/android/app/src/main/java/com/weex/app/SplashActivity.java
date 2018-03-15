@@ -9,11 +9,15 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
+import android.widget.Button;
+
+import com.weex.app.extend.VpnUIActivity;
 
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends VpnUIActivity {
 
-
+  private Button btnStart;
+  private Button btnEnd;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -41,8 +45,8 @@ public class SplashActivity extends AppCompatActivity {
           intent.setData(data);
         }
         intent.putExtra("from", "splash");
-        startActivity(intent);
-        finish();
+//        startActivity(intent);
+//        finish();
       }
 
       @Override
@@ -50,5 +54,20 @@ public class SplashActivity extends AppCompatActivity {
       }
     });
     textView.startAnimation(animationSet);
+
+    btnStart = findViewById(R.id.btn_start);
+    btnStart.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        startVpnService();
+      }
+    });
+    btnEnd = findViewById(R.id.btn_stop);
+    btnEnd.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        stopVpnService();
+      }
+    });
   }
 }
