@@ -1,6 +1,6 @@
 {
-  "AppName":"EasyApp",
+  "AppName":"Easyss",
   "AppId":"com.easyss.weex",
-  "SplashText":"Hello\nEasyss",
+  "SplashText":"Hello Easyss",
   "WeexBundle":"index.js"
 }
