@@ -20867,7 +20867,7 @@ module.exports = {
   methods: {
     start: function start() {
       var easyss = weex.requireModule('easyss');
-      var ret = easyss.start("hello easyss...");
+      var ret = easyss.start();
 
       this.greeting = ret;
     }

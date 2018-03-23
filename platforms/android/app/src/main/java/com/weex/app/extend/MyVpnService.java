@@ -48,7 +48,7 @@ public class MyVpnService extends VpnService {
             builder.setMtu(1500);//MaximunTransmission Unit,网络端口的最大传输单元，如果数据包长度大于这个数字，则会分包
             builder.addAddress("10.1.10.1",32);//VPN转发的IP地址,虚拟网络端口的IP地址
             builder.addRoute("0.0.0.0",0);//匹配IP包，只有匹配上的才能被路由到虚拟端口上。0.0.0.0/0，则代表把所有的IP包都路由到虚拟端口
-            builder.setSession("Our VpnService");//Vpn链接名字
+            builder.setSession("VpnService");//Vpn链接名字
             mInterface = builder.establish();
         }
 
