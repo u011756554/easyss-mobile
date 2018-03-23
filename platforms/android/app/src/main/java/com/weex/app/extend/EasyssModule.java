@@ -24,6 +24,7 @@ public class EasyssModule extends WXModule {
         }
     }
 
+    @JSMethod (uiThread = false)
     public void stop() {
         if (WXPageActivity.instance != null) {
             WXPageActivity.instance.stopVpnService();

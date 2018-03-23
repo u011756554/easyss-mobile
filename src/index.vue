@@ -4,12 +4,14 @@
     <text class="message">{{greeting}}</text>
     <div>
       <text class="button" @click="start">Start</text>
+      <text class="button" @click="stop">Stop</text>
     </div>
   </div>
   
 </template>
 
 <script>
+  var easyss = weex.requireModule('easyss');
   module.exports = {
     data: function() {
       return {
@@ -18,10 +20,11 @@
     },
     methods: {
       start: function() {
-        var easyss = weex.requireModule('easyss');
         var ret = easyss.start();
-
         this.greeting = ret;
+      },
+      stop: function() {
+        easyss.stop();
       }
     }
   }

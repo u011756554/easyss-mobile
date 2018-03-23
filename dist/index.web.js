@@ -20857,7 +20857,9 @@ module.exports = function normalizeComponent (
 //
 //
 //
+//
 
+var easyss = weex.requireModule('easyss');
 module.exports = {
   data: function data() {
     return {
@@ -20866,10 +20868,11 @@ module.exports = {
   },
   methods: {
     start: function start() {
-      var easyss = weex.requireModule('easyss');
       var ret = easyss.start();
-
       this.greeting = ret;
+    },
+    stop: function stop() {
+      easyss.stop();
     }
   }
 };
@@ -20898,7 +20901,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.start
     }
-  }, [_vm._v("Start")])])])
+  }, [_vm._v("Start")]), _vm._v(" "), _c('text', {
+    staticClass: "button",
+    staticStyle: _vm.$processStyle(undefined),
+    style: (_vm.$processStyle(undefined)),
+    on: {
+      "click": _vm.stop
+    }
+  }, [_vm._v("Stop")])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
