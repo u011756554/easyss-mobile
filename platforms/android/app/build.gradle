@@ -6,7 +6,6 @@ android {
     buildToolsVersion project.buildToolsVersion
 
     defaultConfig {
-        multiDexEnabled true
         applicationId "com.weex.app"
         minSdkVersion project.appMinSdkVersion
         targetSdkVersion project.targetSdkVersion

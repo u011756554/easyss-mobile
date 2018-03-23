@@ -227,6 +227,7 @@ import com.taobao.weex.WXSDKEngine;
 import com.taobao.weex.WXSDKInstance;
 import com.taobao.weex.common.IWXDebugProxy;
 import com.taobao.weex.common.WXRenderStrategy;
+import com.weex.app.util.CommonUtils;
 
 import java.util.HashMap;
 import java.util.Map;

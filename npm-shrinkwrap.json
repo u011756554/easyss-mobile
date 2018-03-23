@@ -5425,6 +5425,12 @@
             "integrity": "sha1-EEqOSqym09jNFXqO+L+rLXo//bY=",
             "dev": true
         },
+        "ios-deploy": {
+            "version": "1.9.2",
+            "resolved": "https://registry.npmjs.org/ios-deploy/-/ios-deploy-1.9.2.tgz",
+            "integrity": "sha1-wvTEawbbR3GTmyn5gMfBqJBrR6I=",
+            "optional": true
+        },
         "ip": {
             "version": "1.1.5",
             "resolved": "http://registry.npm.taobao.org/ip/download/ip-1.1.5.tgz",

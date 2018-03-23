@@ -20343,7 +20343,7 @@ var Component = __webpack_require__(13)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "C:\\Users\\nange\\go\\src\\github.com\\nange\\easyss-mobile\\src\\index.vue"
+Component.options.__file = "/Users/nange/Workspace/go/src/github.com/nange/easyss-mobile/src/index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -20867,7 +20867,7 @@ module.exports = {
   methods: {
     start: function start() {
       var easyss = weex.requireModule('easyss');
-      var ret = easyss.printLog("hello easyss...");
+      var ret = easyss.start("hello easyss...");
 
       this.greeting = ret;
     }

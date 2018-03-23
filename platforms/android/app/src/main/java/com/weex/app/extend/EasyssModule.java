@@ -8,7 +8,7 @@ import mobile.Mobile;
 
 public class EasyssModule extends WXModule {
 	@JSMethod (uiThread = false)
-	public String printLog(String msg)  {
+	public String start(String msg)  {
 		String ret = Mobile.hello(msg);
 		return  ret;
 	}

@@ -19,7 +19,7 @@
     methods: {
       start: function() {
         var easyss = weex.requireModule('easyss');
-        var ret = easyss.printLog("hello easyss...");
+        var ret = easyss.start("hello easyss...");
 
         this.greeting = ret;
       }
