@@ -41,9 +41,16 @@ public class WXPageActivity extends AbsWeexActivity implements
   private boolean mFromSplash = false;
   private HotReloadManager mHotReloadManager;
 
+  public static WXPageActivity instance = null;
   @Override
   public void onCreateNestInstance(WXSDKInstance instance, NestedContainer container) {
     Log.d(TAG, "Nested Instance created.");
+  }
+
+  @Override
+  public void onResume() {
+    super.onResume();
+    instance = this;
   }
 
   @Override
@@ -258,5 +265,6 @@ public class WXPageActivity extends AbsWeexActivity implements
     if (mHotReloadManager != null) {
       mHotReloadManager.destroy();
     }
+    instance = null;
   }
 }

@@ -9,10 +9,12 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
+import android.widget.Button;
+
+import com.weex.app.extend.VpnUIActivity;
 
 
-public class SplashActivity extends AppCompatActivity {
-
+public class SplashActivity extends VpnUIActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

@@ -220,6 +220,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.weex.app.extend.VpnUIActivity;
+import com.weex.app.util.CommonUtils;
 import com.taobao.weex.IWXRenderListener;
 import com.taobao.weex.WXSDKEngine;
 import com.taobao.weex.WXSDKInstance;
@@ -230,7 +232,7 @@ import com.weex.app.util.CommonUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRenderListener {
+public abstract class AbsWeexActivity extends VpnUIActivity implements IWXRenderListener {
   private static final String TAG = "AbsWeexActivity";
   protected BroadcastReceiver mBroadcastReceiver;
   protected ViewGroup mContainer;
