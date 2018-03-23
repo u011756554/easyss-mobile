@@ -16,6 +16,8 @@ import com.weex.app.extend.VpnUIActivity;
 
 public class SplashActivity extends VpnUIActivity {
 
+  private Button btnStart;
+  private Button btnEnd;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -43,8 +45,8 @@ public class SplashActivity extends VpnUIActivity {
           intent.setData(data);
         }
         intent.putExtra("from", "splash");
-        startActivity(intent);
-        finish();
+//        startActivity(intent);
+//        finish();
       }
 
       @Override
@@ -52,5 +54,20 @@ public class SplashActivity extends VpnUIActivity {
       }
     });
     textView.startAnimation(animationSet);
+
+    btnStart = findViewById(R.id.btn_start);
+    btnStart.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        startVpnService();
+      }
+    });
+    btnEnd = findViewById(R.id.btn_stop);
+    btnEnd.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        stopVpnService();
+      }
+    });
   }
 }

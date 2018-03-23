@@ -15,7 +15,7 @@
               android:textSize="50sp"
               android:gravity="center"
               android:text="@string/dummy_content"/>
-<!--
+
     <Button
         android:id="@+id/btn_start"
         android:layout_width="wrap_content"
@@ -31,5 +31,4 @@
         android:text="关闭VPN"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="50dp"/>
--->
 </FrameLayout>
